@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nb">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,23 +12,21 @@
 </head>
 <body>
     <header><a href="index.html" class="logo"></a>
-        
-        <nav>
-            <form>
-            <label>
-                <input type="search" placeholder="Søk her" id="search">
-                <button aria-label="search button"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </label>
+
+            <form id="search">
+                <input type="text" placeholder="Søk her" name="search" i class="round">
+                <button type="submit" i class="corner"><i class="fa fa-search"></i></button>
             </form>
-            
+            <nav>
             <ul>
-                <li><a href="#">Hjem</a></li>
+                <li><a href="index.html">Hjem</a></li>
                 <li><a href="#">Produkter</a></li>
-                <li><a href="#" id="logo">Logo</a></li>
+                <li><a href="index.html" id="logo">Logo</a></li>
                 <li><a href="#">Kategorier</a></li>
                 <li><a href="#">Kontakt oss</a></li>
             </ul>
-
+        </nav>
+        <nav>
                 <ul class="flex-menu" id="menu">
                     <li>
                         <a href="#" aria-label="Konto">
@@ -46,13 +44,21 @@
                         </a>
                     </li>
                 </ul>
-        </nav>
+            </nav>
         </header>
     <main>
+         <ul class="breadcrumb">
+            <i class="fa-solid fa-arrow-left"></i>
+            <li><a href="index.html">Fortsett å handle</a></li>
+            </ul>
+
         <section>
-        <h2>1. SHOPPINGBAGEN DIN</h2>
+            <h2>1. SHOPPINGBAGEN DIN</h2>
             <ul>
                 <li>
+                    <picture>
+                        <img src="img/kjole.jpg" alt="kjole" width="300" height="350" alt="placeholder">
+                    </picture>
                     <p>PRODUCT NAME</p>
                     <p>Kr 1999</p>
                     <p>Farge: beige</p>
@@ -64,53 +70,57 @@
                             <option value="saab">M</option>
                             <option value="fiat">L</option>
                             <option value="audi">XL</option>
+                        </select>
                     
-                    <select id="antall" name="antall"></select>
-                    <label for="antall">Antall</label>
-                    <input type="number" id="number" placeholder="antall">
+                        <label for="quantity">Antall</label>
+                        <input type="number" id="quantity" name="Antall" min="1" max="4">
                 </li>
             </ul>
 
 
             <ul>
                 <li>
+                    <picture>
+                        <img src="img/kjole.jpg" alt="kjole" width="300" height="350" alt="placeholder">
+                    </picture>
                     <p>PRODUCT NAME</p>
                     <p>Kr 1999</p>
                     <p>Farge: beige</p>
                     
-                    <label for="størrelse">Størrelse</label>
+                    <label for="size">Størrelse</label>
+                        <select id="size" name="størrelse">
+                            <option value="audi">XS</option>
+                            <option value="volvo">S</option>
+                            <option value="saab">M</option>
+                            <option value="fiat">L</option>
+                            <option value="audi">XL</option>
+                        </select>
+
+                        <label for="quantity">Antall</label>
+                        <input type="number" id="quantity" name="Antall" min="1" max="4">
+                 </li>
+            </ul>
+            
+            <ul>
+                <li>
+                    <picture>
+                        <img src="img/kjole.jpg" alt="kjole" width="300" height="350" alt="placeholder">
+                    </picture>
+                    <p>PRODUCT NAME</p>
+                    <p>Kr 1999</p>
+                    <p>Farge: beige</p>
+                        
+                    <label for="size">Størrelse</label>
                         <select id="størrelse" name="størrelse">
                             <option value="audi">XS</option>
                             <option value="volvo">S</option>
                             <option value="saab">M</option>
                             <option value="fiat">L</option>
                             <option value="audi">XL</option>
+                        </select>
 
-                    <select id="antall" name="antall"></select>
-                    <label for="antall">Antall</label>
-                    <input type="number" id="number" placeholder="antall">
-                </li>
-            </ul>
-
-
-                <ul>
-                    <li>
-                        <p>PRODUCT NAME</p>
-                        <p>Kr 1999</p>
-                        <p>Farge: beige</p>
-                        
-                        <label for="størrelse">Størrelse</label>
-                            <select id="størrelse" name="størrelse">
-                                <option value="audi">XS</option>
-                                <option value="volvo">S</option>
-                                <option value="saab">M</option>
-                                <option value="fiat">L</option>
-                                <option value="audi">XL</option>
-
-                        <select id="antall" name="antall"></select>
-                        <label for="antall">Antall</label>
-                        <input type="number" id="number" placeholder="1">
-                    </form>
+                        <label for="quantity">Antall</label>
+                        <input type="number" id="quantity" name="Antall" min="1" max="4">
                     </li>
                 </ul>
             </section>
@@ -144,7 +154,7 @@
             <h2>4. BETALING</h2>
             <p>BETAL MED KORT</p>
         
-            <label for="cardnumber">Kortnummer</label>
+            <label for="number">Kortnummer</label>
             <input type="number" id="kortnummer" placeholder="342342****4435">
             <label for="date">Utløpsdato</label>
             <input type="date" id="dato"placeholder=dato>
@@ -162,37 +172,33 @@
     </main>
 
     <footer>
-        <h2>Logo</h2>
-        <p>lorum ipsum tekst limes inn her</p>
-
-            <section>
-                <h3>KONTAKT</h3>
-                <ul>
-                    <li><i class="fa-solid fa-location-dot"></i> Adresse: B R A veien 4, 1757 Halden</li>
-                    <li><i class="fa-solid fa-phone"></i>Telefon: 69 60 80 00</li>
-                    <li><i class="fa-solid fa-envelope"></i>E-post: halden@hiof.no</li>
-                    <li><i class="fa-solid fa-clock"></i>Åpningstider: Stenger 15:00</li>
-                </ul>
-            </section>
-
-            <section>
-                <h3>SNARVEIER </h3>
-                <ul>
-                    <li>Produkter</li>
-                    <li>Kategorier</li>
-                    <li>Kontakt oss</li>
-                </ul>
-            </section>
-
-            <section>
-                <h3>SOSIALE MEDIER</h3>
-                <ul>
-                    <li><i class="fa-brands fa-instagram"></i></li>
-                    <li><i class="fa-brands fa-facebook"></i></li>
-                    <li><i class="fa-brands fa-linkedin"></i></li>
-                    <li><i class="fa-brands fa-pinterest"></i></li>
-                </ul>
-            </section>
+            <a href="index.html" id="footer-logo">Logo</a>
+            <p>But I must explain to you how all this mistaken idea of denouncing pleasure</p>
+                
+                <section>
+                        <ul class="footer">
+                            <li><h3>KONTAKT</h3></li>
+                            <li><i class="fa-solid fa-location-dot"></i><strong>Adresse:</strong> B R A veien 4, 1757 Halden</li>
+                            <li><i class="fa-solid fa-phone"></i><strong>Telefon</strong> 69 60 80 00</li>
+                            <li><i class="fa-solid fa-envelope"></i><strong>E-post</strong> halden@hiof.no</li>
+                            <li><i class="fa-solid fa-clock"></i><strong>Åpningstider:</strong>Å Stenger 15:00</li>
+                        </ul>
+               
+                        <ul class="footer">
+                            <li><h3>SNARVEIER </h3></li>
+                            <li>Produkter</li>
+                            <li>Kategorier</li>
+                            <li>Kontakt oss</li>
+                        </ul>
+            
+                        <ul class="footer-icons">
+                            <li><h3>SOSIALE MEDIER</h3></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></a></i></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook"></a></i></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin"></a></i></li>
+                            <li><a href="#"><i class="fa-brands fa-pinterest"></a></i></li>
+                     </ul>
+                </section>
     </footer>
 </body>
 </html>

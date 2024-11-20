@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="nb">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,25 +12,22 @@
     <title>Eksamen</title>
 </head>
 <body>
-    <div id="grid-container">
     <header><a href="index.html" class="logo"></a>
-
-        <nav>
-            <form>
-            <label>
-                <input type="search" placeholder="Søk her" id="search">
-                <button aria-label="search button"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </label>
+    
+        <form id="search">
+                <input type="text" placeholder="Søk her" name="search" i class="round">
+                <button type="submit" i class="corner"><i class="fa fa-search"></i></button>
             </form>
-
-            <ul>
-                <li><a href="#">Hjem</a></li>
-                <li><a href="#">Produkter</a></li>
-                <li><a href="#" id="logo">Logo</a></li>
-                <li><a href="#">Kategorier</a></li>
-                <li><a href="#">Kontakt oss</a></li>
-            </ul>
-
+            <nav>
+                <ul class="header">
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="#">Produkter</a></li>
+                    <li><a href="index.html" id="logo">Logo</a></li>
+                    <li><a href="#">Kategorier</a></li>
+                    <li><a href="#">Kontakt oss</a></li>
+                </ul>
+            </nav>
+            <nav>
                 <ul class="flex-menu" id="menu">
                     <li>
                         <a href="#" aria-label="Konto">
@@ -47,16 +45,16 @@
                         </a>
                     </li>
                 </ul>
-        </nav>
+            </nav>
     </header>
         <main>
             <section>
                 <header>
                     <picture>
-                        <img src="img/havet.jpg" alt="Havet" width="1000" height="400">
+                        <img src="img/havet.jpg" alt="Havet" width="1000" height="400" alt="placeholder">
                     </picture>
-                    <h1>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born</h1>
-                    <a href="#" class="btn" aria-label="Les mer">Les mer</a>
+                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born</p>
+                        <button type="button">Les mer</button>
                 </header>
             </section>
 
@@ -66,174 +64,181 @@
                 <button type="button">New product</button>
                 <button type="button">Special price</button>
                 <button type="button">Best sellers</button>
-
-
-                <a href="#" class="btn" aria-label="New product">New product</a>
-                <a href="#" class="btn" aria-label="Special price">Special price</a>
-                <a href="#" class="btn" aria-label="Best sellers">Best sellers</a>
-            </section>
-
-            <section>
-                <h5>Product name</h5>
-                <p>Kr 1999</p>
-                <img src="" alt="">
-                <i class="fa-regular fa-heart"></i>
             </section>
               
             <section>
-                        <img src="" alt="">
-                        <i class="fa-regular fa-heart"></i>
-
-
-                    <ul>
-                        <li>Product name</li>
-                        <li>Kr 1999</li>
-                    </ul>
-                
-                        <img src="" alt="">
+                <h2>Våre mest populære produkter</h2>
+                <picture>
+                        <img src="img/gress.jpg" alt="gress" width="350" height="350" alt="placeholder">
+                </picture>
+                    <p>Product name</p>
+                    <p>Kr 1999</p>
                         <i class="fa-regular fa-heart"></i>
                 
-                    <ul>
-                        <li>Product name</li>
-                        <li>Kr 1999</li>
-                    </ul>
-
-                        <img src="" alt="">
-                        <i class="fa-regular fa-heart"></i>
-                    
-                    <ul>
-                        <li>Product name</li>
-                        <li>Kr 1999</li>
-                    </ul>
-
-                        <img src="" alt="">
+                <picture>
+                        <img src="img/gress.jpg" alt="gress" width="350" height="350" alt="placeholder">
+                </picture>
+                    <p>Product name</p>
+                    <p>Kr 1999</p>
                         <i class="fa-regular fa-heart"></i>
 
-                    <ul>
-                        <li>Product name</li>
-                        <li>Kr 1999</li>
-                    </ul>
-
-                        <img src="" alt="">
+                <picture>
+                        <img src="img/gress.jpg" alt="gress" width="350" height="350" alt="placeholder">
+                </picture>
+                    <p>Product name</p>
+                    <p>Kr 1999</p>
                         <i class="fa-regular fa-heart"></i>
-    
-                    <ul>
-                        <li>Product name</li>
-                        <li>Kr 1999</li>
-                    </ul>
 
-        
-                        <img src="" alt="">
+                <picture>
+                        <img src="img/gress.jpg" alt="gress" width="350" height="350" alt="placeholder">
+                </picture>
+                    <p>Product name</p>
+                    <p>Kr 1999</p>
                         <i class="fa-regular fa-heart"></i>
-                
-                    <ul>
-                        <li>Product name</li>
-                        <li>Kr 1999</li>
-                    </ul>
+
+                <picture>
+                        <img src="img/gress.jpg" alt="gress" width="350" height="350" alt="placeholder">
+                </picture>
+                    <p>Product name</p>
+                    <p>Kr 1999</p>
+                        <i class="fa-regular fa-heart"></i>
+
+                <picture>
+                        <img src="img/gress.jpg" alt="gress" width="350" height="350" alt="placeholder">
+                </picture>
+                    <p>Product name</p>
+                    <p>Kr 1999</p>
+                        <i class="fa-regular fa-heart"></i>
             </section>
 
-       <section>
-            <h2>Våre mest populære kategorier</h2>
-            <p>Oppdag det beste av det beste</p>
-        </section>
-            
-        <section>
-            <h3>Category 1</h3>
-        </section>
+            <section>
+                <h2>Våre mest populære kategorier</h2>
+                <p>Oppdag det beste av det beste</p>
+            </section>
+        <div class="grid-container">
+            <section class="grid-category1">
+                <picture>
+                    <a href="#">Category 1</a>
+                    <img src="img/damesko.jpg" alt="damesko" width="350" height="270" alt="placeholder">
+                </picture>
+            </section>
 
-        <section>
-            <h3>Category 2</h3>
-        </section>
+            <section class="grid-category2">
+                <picture>
+                    <a href="#">Category 2</a>
+                    <img src="img/mat.jpg" alt="mat" width="350" height="270" alt="placeholder">
+                </picture>
+            </section>
 
-        <section>
-            <h3>Category 3</h3>
-        </section>
+            <section class="grid-category3">
+                <picture>
+                    <a href="#">Category 3</a>
+                    <img src="img/plante.jpg" alt="plante" width="350" height="500" alt="placeholder">
+                </picture>
+            </section>
 
-        <section>
-            <h3>Category 4</h3>
-        </section>
+            <section class="grid-category4">
+                <picture>
+                    <a href="#">Category 4</a>
+                    <img src="img/sminke.jpg" alt="sminke" width="710" height="500" alt="placeholder">
+                </picture>
+            </section>
 
-        <section>
-            <h3>Category 5</h3>
-        </section>
+            <section class="grid-category5">
+                <picture>
+                    <a href="#">Category 5</a>
+                    <img src="img/verktoy.jpg" alt="verktoy" width="350" height="500" alt="placeholder">
+                </picture>
+            </section>
+        </div>
             
-            
-    
-            
-            
-            
-            <section id="Anmeldelser">
-                    <h2>Anmeldelser</h2>
-
+            <section>
+                    <h3>Anmeldelser</h3>
                 <article>
                     <picture>
-                        <img src="img/hund.jpg" alt="Hund" width="50" height="50">
+                        <img src="img/hund.jpg" alt="Hund" width="70" height="70" alt="placeholder">
                     </picture>
-                    <h4>Rober Labrador</h4>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                        <h4>Rober Labrador</h4>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.by injected humour, or randomised words which don't look even slightly believable</p>
                 </article>
 
                 <article>
                     <picture>
-                        <img src="img/hund.jpg" alt="Hund" width="50" height="50">
+                        <img src="img/hund.jpg" alt="Hund" width="70" height="70" alt="placeholder">
                     </picture>
-                    <h4>Rober Labrador</h4>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                        <h4>Rober Labrador</h4>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believableby injected humour, or randomised words which don't look even slightly believable</p>
                 </article>
 
                 <article>
                     <picture>
-                        <img src="img/hund.jpg" alt="Hund" width="50" height="50">
+                        <img src="img/hund.jpg" alt="Hund" width="70" height="70" alt="placeholder">
                     </picture>
-                    <h4>Rober Labrador</h4>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                        <h4>Rober Labrador</h4>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believableby injected humour, or randomised words which don't look even slightly believable</p>
                 </article>
 
                 <article>
                     <picture>
-                        <img src="img/hund.jpg" alt="Hund" width="50" height="50">
+                        <img src="img/hund.jpg" alt="Hund" width="70" height="70" alt="placeholder">
                     </picture>
-                    <h4>Rober Labrador</h4>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                        <h4>Rober Labrador</h4>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believableby injected humour, or randomised words which don't look even slightly believable</p>
                 </article>
-
-
             </section>
         </main>
+        <aside>
 
-        <footer>
-            <a href="#" id="footer-logo">Logo</a>
+        </aside>
+
+    <footer>
+            <a href="index.html" id="footer-logo">Logo</a>
             <p>But I must explain to you how all this mistaken idea of denouncing pleasure</p>
                 
                 <section>
-                    <h3>KONTAKT</h3>
-                    <ul>
-                        <li><i class="fa-solid fa-location-dot"></i> Adresse: B R A veien 4, 1757 Halden</li>
-                        <li><i class="fa-solid fa-phone"></i>Telefon: 69 60 80 00</li>
-                        <li><i class="fa-solid fa-envelope"></i>E-post: halden@hiof.no</li>
-                        <li><i class="fa-solid fa-clock"></i>Åpningstider: Stenger 15:00</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h3>SNARVEIER </h3>
-                    <ul>
-                        <li>Produkter</li>
-                        <li>Kategorier</li>
-                        <li>Kontakt oss</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h3>SOSIALE MEDIER</h3>
-                    <ul>
-                        <li><i class="fa-brands fa-instagram"></i></li>
-                        <li><i class="fa-brands fa-facebook"></i></li>
-                        <li><i class="fa-brands fa-linkedin"></i></li>
-                        <li><i class="fa-brands fa-pinterest"></i></li>
-                    </ul>
+                        <ul class="footer">
+                            <li><h4>KONTAKT</h4></li>
+                            <li><i class="fa-solid fa-location-dot"></i><strong>Adresse:</strong> B R A veien 4, 1757 Halden</li>
+                            <li><i class="fa-solid fa-phone"></i><strong>Telefon</strong> 69 60 80 00</li>
+                            <li><i class="fa-solid fa-envelope"></i><strong>E-post</strong> halden@hiof.no</li>
+                            <li><i class="fa-solid fa-clock"></i><strong>Åpningstider:</strong>Å Stenger 15:00</li>
+                        </ul>
+               
+                        <ul class="footer">
+                            <li><h4>SNARVEIER </h4></li>
+                            <li>Produkter</li>
+                            <li>Kategorier</li>
+                            <li>Kontakt oss</li>
+                        </ul>
+            
+                        <ul class="footer-icons">
+                            <li><h4>SOSIALE MEDIER</h4></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></a></i></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook"></a></i></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin"></a></i></li>
+                            <li><a href="#"><i class="fa-brands fa-pinterest"></a></i></li>
+                     </ul>
                 </section>
         </footer>
-    </div>
 </body>
 </html>

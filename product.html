@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nb">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,32 +10,23 @@
     
     <title>Eksamen</title>
 </head>
-
 <body>
     <header><a href="index.html" class="logo"></a>
-        
-        <nav>
-            <form>
-            <label>
-                <input type="search" placeholder="Søk her" id="search">
-                <button aria-label="search button"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </label>
+
+            <form id="search">
+                <input type="text" placeholder="Søk her" name="search" i class="round">
+                <button type="submit" i class="corner"><i class="fa fa-search"></i></button>
             </form>
-
-            <ul class="breadcrumb">
-                <li><a href="">Hjem</a></li>
-                <li><a href="">Kategori</a></li>
-                <li><a href="">Produkter</a></li>
-
-            </ul>
+            <nav>
             <ul>
-                <li><a href="#">Hjem</a></li>
+                <li><a href="index.html">Hjem</a></li>
                 <li><a href="#">Produkter</a></li>
-                <li><a href="#" id="logo">Logo</a></li>
+                <li><a href="index.html" id="logo">Logo</a></li>
                 <li><a href="#">Kategorier</a></li>
                 <li><a href="#">Kontakt oss</a></li>
             </ul>
-
+        </nav>
+            <nav>
                 <ul class="flex-menu" id="menu">
                     <li>
                         <a href="#" aria-label="Konto">
@@ -53,37 +44,56 @@
                         </a>
                     </li>
                 </ul>
-        </nav>
+            </nav>
     </header>
     <main>
-        <section>
+        <ul class="breadcrumb">
+            <li><a href="index.html">Hjem</a></li>
+            <i class="fa-solid fa-chevron-right"></i>
+            <li><a href="index.html/Category">Kategori</a></li>
+            <i class="fa-solid fa-chevron-right"></i>
+            <li><a href="#">Produktnavn</a></li>
+
+        </ul>
+        <section class="grid-container">
+            <picture class="row">
+                <img src="img/kjole.jpg" alt="kjole" width="200" height="200" alt="placeholder">
+                <img src="img/kjole.jpg" alt="kjole" width="200" height="200" alt="placeholder">
+                <picture class="column">
+                    <img src="img/kjole.jpg" alt="kjole" width="400" height="600" alt="placeholder">
+            </picture>
+            
+
             <article>
-            <h2>Produktnavn</h2>
-            <p>5 195 kr inkl. mva.</p>
-            <p>Farge: Beige</p>
-        </article>
-    
-        <article>
+                <h2>Produktnavn</h2>
+                <h4>MERKENAVN</h4>
+                    <p>5 195 kr inkl. mva.</p>
+                    <p>Farge: Beige</p>
+
             <label for="size">Størrelse</label>
-            <button type="button">Legg i handlekurv</button>
-                <i class="fa-regular fa-heart"></i>
-                        <select id="size" name="størrelse">
-                            <option value="audi">XS</option>
-                            <option value="volvo">S</option>
-                            <option value="saab">M</option>
-                            <option value="fiat">L</option>
-                            <option value="audi">XL</option>            
+            <select id="size" name="størrelse">
+                <option value="audi">XS</option>
+                <option value="volvo">S</option>
+                <option value="saab">M</option>
+                <option value="fiat">L</option>
+                <option value="audi">XL</option>    
+            </select>    
+            <button type="button">Legg i handlekurv</button><i class="fa-regular fa-heart"></i> 
         </article>
+
         <article>
             <h4>Materiale og vedlikehold</h4>
-            <p><li>Overmateriale: 95% viskose, 5% elastan</li></p>
-            <p><li>Materiale ermer: 100% polyester</li></p>
-            <p><li>Materiale: Jersey</li></p>
+                <p><li>Overmateriale: 95% viskose, 5% elastan</li></p>
+                <p><li>Materiale ermer: 100% polyester</li></p>
+                
+                <p><li>Materiale: Jersey</li></p>
         </article>
+
         <article>
             <h4>Produktdetaljer</h4>
             <p>Epcot is a theme park at Walt Disney WOrld Resort featuring exciting attractions, international pacilions, award-winning fireworks and seasonal speasial events.</p>
         </article>
+
         <article>
             <h4>Størrelsetabell</h4>
             <p>Sjekk hvordan din vanlige størrelse konverterer til andre størrelser i vår størrelseguide. Husk at dette kun er en generell guide og at størrelsene kan variere i forhold til merke og modell.</p>
@@ -208,47 +218,157 @@
                     <td>148</td>
                 </tr>
             </table>
-
         </article>
-        <article>Anmeldelser</article>
-        <p>Rober Labrador</p>
-        <p>2024-10-02</p>
-        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod.</p>
+
+        <article>
+            <h4>Anmeldelser</h4>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <p>Rober Labrador</p>
+            <p>2024-10-02</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod.</p>
+        </article>
+        </section>
+
+        <section>
+            <h3>Lignende produkter</h3>
+
+            <article>
+                <picture>
+                    <i class="fa-solid fa-heart"></i>
+                    <img src="img/vindu.jpg" alt="vindu" width="200" height="200" alt="placeholder">
+                    <h4>Product name</h4>
+                    <p>Kr 1999</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p>842 Reviews</p>
+                </picture>
+            </article>
+            <article>
+                <picture>
+                    <i class="fa-solid fa-heart"></i>
+                    <img src="img/vindu.jpg" alt="vindu" width="200" height="200" alt="placeholder">
+                    <h4>Product name</h4>
+                    <p>Kr 1999</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p>842 Reviews</p>
+                </picture>
+            </article>
+            <article>
+                <picture>
+                    <i class="fa-solid fa-heart"></i>
+                    <img src="img/vindu.jpg" alt="vindu" width="200" height="200" alt="placeholder">
+                    <h4>Product name</h4>
+                    <p>Kr 1999</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p>842 Reviews</p>
+                </picture>
+            </article>
+            <article>
+                <picture>
+                    <i class="fa-solid fa-heart"></i>
+                    <img src="img/vindu.jpg" alt="vindu" width="200" height="200" alt="placeholder">
+                    <h4>Product name</h4>
+                    <p>Kr 1999</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p>842 Reviews</p>
+                </picture>
+            </article>
+            <article>
+                <picture>
+                    <i class="fa-solid fa-heart"></i>
+                    <img src="img/vindu.jpg" alt="vindu" width="200" height="200" alt="placeholder">
+                    <h4>Product name</h4>
+                    <p>Kr 1999</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p>842 Reviews</p>
+                </picture>
+            </article>
+            <article>
+                <picture>
+                    <i class="fa-solid fa-heart"></i>
+                    <img src="img/vindu.jpg" alt="vindu" width="200" height="200" alt="placeholder">
+                    <h4>Product name</h4>
+                    <p>Kr 1999</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p>842 Reviews</p>
+                </picture>
+            </article>
+            <picture>
+                <i class="fa-solid fa-heart"></i>
+                <img src="img/vindu.jpg" alt="vindu" width="200" height="200" alt="placeholder">
+                <h4>Product name</h4>
+                    <p>Kr 1999</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p>842 Reviews</p>
+            </picture>
+        </article>
         </section>
     
     </main>
 
     <footer>
-        <h2>Logo</h2>
-        <p>lorum ipsum tekst limes inn her</p>
-
+        <a href="index.html" id="footer-logo">Logo</a>
+        <p>But I must explain to you how all this mistaken idea of denouncing pleasure</p>
+            
             <section>
-                <h3>KONTAKT</h3>
-                <ul>
-                    <li><i class="fa-solid fa-location-dot"></i> Adresse: B R A veien 4, 1757 Halden</li>
-                    <li><i class="fa-solid fa-phone"></i>Telefon: 69 60 80 00</li>
-                    <li><i class="fa-solid fa-envelope"></i>E-post: halden@hiof.no</li>
-                    <li><i class="fa-solid fa-clock"></i>Åpningstider: Stenger 15:00</li>
-                </ul>
-            </section>
-
-            <section>
-                <h3>SNARVEIER </h3>
-                <ul>
-                    <li>Produkter</li>
-                    <li>Kategorier</li>
-                    <li>Kontakt oss</li>
-                </ul>
-            </section>
-
-            <section>
-                <h3>SOSIALE MEDIER</h3>
-                <ul>
-                    <li><i class="fa-brands fa-instagram"></i></li>
-                    <li><i class="fa-brands fa-facebook"></i></li>
-                    <li><i class="fa-brands fa-linkedin"></i></li>
-                    <li><i class="fa-brands fa-pinterest"></i></li>
-                </ul>
+                    <ul class="footer">
+                        <li><h3>KONTAKT</h3></li>
+                        <li><i class="fa-solid fa-location-dot"></i><strong>Adresse:</strong> B R A veien 4, 1757 Halden</li>
+                        <li><i class="fa-solid fa-phone"></i><strong>Telefon</strong> 69 60 80 00</li>
+                        <li><i class="fa-solid fa-envelope"></i><strong>E-post</strong> halden@hiof.no</li>
+                        <li><i class="fa-solid fa-clock"></i><strong>Åpningstider:</strong>Å Stenger 15:00</li>
+                    </ul>
+           
+                    <ul class="footer">
+                        <li><h3>SNARVEIER </h3></li>
+                        <li>Produkter</li>
+                        <li>Kategorier</li>
+                        <li>Kontakt oss</li>
+                    </ul>
+        
+                    <ul class="footer-icons">
+                        <li><h3>SOSIALE MEDIER</h3></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></a></i></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></a></i></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></a></i></li>
+                        <li><a href="#"><i class="fa-brands fa-pinterest"></a></i></li>
+                 </ul>
             </section>
     </footer>
 </body>
