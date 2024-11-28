@@ -28,12 +28,12 @@ header.scroll-container1 {
     position: relative;
     font-size: 12px;
 }
+   
 
 header.scroll-container1 img{
     padding: 0;
     border-radius: 50px;
     gap: 10px;
-    width: 500px;
 }
 
 
