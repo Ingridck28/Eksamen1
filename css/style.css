@@ -146,9 +146,6 @@ nav{
     }
 
 
-
-/* søke felt med ikon inni*/
-
 .search-wrapper{
     width: 250px;
     height: 25px;
@@ -184,8 +181,6 @@ nav{
     margin-left: auto;
 }
 
-    
-    
     
 #section{
     display: grid;
@@ -242,7 +237,6 @@ main{
     grid-area: main;
 }
 
-/*product bredcrumb*/
 ul.breadcrumb{
     padding: 5px;
     background-color: #fff;
@@ -264,16 +258,6 @@ img{
     border-radius: px;
 }
 
-/*våre mest populære produkter*/
-/*
-.grid-container-product{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    margin: 0;
-    width: 100%;
-}
-*/
 
 .grid-product{
     position: relative;
@@ -317,19 +301,6 @@ img{
 }
 
 
-/*
-.grid-container-category{
-    display: grid;
-    gap: 20px;
- 
-    grid-template-areas: 'category1 category2 category3'
-                         'category1 category2 category3'
-                         'category4 category4 category3'
-                         'category4 category4 category5'
-                         'category4 category4 category5';
- 
- }
-*/
 
 .grid-container-category{ 
     display: grid;
@@ -339,6 +310,10 @@ img{
                         'category4'
                         'category5';
 
+}
+
+.p-center{
+    text-align: center;
 }
 
  .grid-container-category img{
@@ -675,15 +650,6 @@ section.leveringsadresse{
 }
 
 
-
- section.levering{
-    background-color: #fff;
-    border: 1px solid rgb(246, 246, 246);
-    padding: 0;
-    margin: 20px;
-    text-align: left;
- }
-
  section.levering label {
     padding: 10px;
     margin: 30px;
@@ -695,6 +661,10 @@ section.leveringsadresse{
  .container-checkout-deliveryoptions{
     display: flex;
     flex-direction: column;
+ }
+
+ .radio-deliveryoptions{
+    border: border: 1px solid rgb(246, 246, 246);;
  }
 
  .btn-checkout{
@@ -717,12 +687,6 @@ section.leveringsadresse{
                         'expirationdate cvc'
                         'expirationdate cvc';
     grid-row: auto;
-
-    /*background-color: #fff;
-    border: 1px solid rgb(246, 246, 246);
-    padding: 50px;
-    margin: 20px;
-    text-align: left;*/
     
  }
 
@@ -760,8 +724,8 @@ form.commit {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    
 }
+
 .grid-product-details h2, h4, p {
     text-align: left;
 }
@@ -833,7 +797,6 @@ form.commit {
  }
 
  
-/* For mobile phones: */
 [class*="col-"] {
     width: 100%;
   }
@@ -980,7 +943,7 @@ form.commit {
         text-transform: uppercase;
         color:white;
       }
-      .test-product {
+      .main-section-product {
         display: flex;
         flex-direction: row;
         align-items: baseline;
